@@ -1,26 +1,154 @@
 body {
-	background-color: black;
-}
-#box {
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-}
-#cv-box {
-	width: 40%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
-#cv-box img {
-	position: relative;
-	width: 100%;
-	height: auto;
+#main_cv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 65%;
+    height: inherit
 }
 
-@media all and (max-width: 1440px){
 
-#cv-box {
-	width: 100%
+/* HEADER */
+
+header {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    border: solid grey 1px;
+    justify-content: center;
+    background-color: rgb(93, 133, 205);
 }
 
+#header_text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 87%;
+}
+
+#header_text a {
+    text-decoration: none;
+    color: white;
+}
+
+#header_text h3 {
+    color: white;
+    font-size: 1.8em;
+}
+
+#header_text p {
+    color: white;
+    margin: 0;
+}
+
+#header_text_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+#header_img {
+    width: 12%
+}
+
+#header_img img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/* MAIN */
+
+main {
+    width: 100%;
+    height: 75%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid red 1px;
+}
+
+
+/* FORMATION AND COMPETENCES */
+
+#main_formation_competence {
+    width: 50%;
+    border: solid green 1px;
+}
+
+.main_text_section {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main_header_section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 10%;
+    background-color: rgb(93, 133, 205);
+}
+
+.main_formation_child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+}
+
+.main_competence_child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40%;
+    background-color: white;
+}
+
+.text_content p {
+    margin: 0;
+}
+
+.text_content h4 {
+    margin: 0;
+}
+
+.text_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/* EXPERIENCES */
+
+#main_experiences {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+}
+
+section .main_header_section {
+    height: 6.5%;
 }
