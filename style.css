@@ -164,6 +164,7 @@ section .main_header_section {
 @media screen and (max-width: 768px) {
     #main_cv {
         height: 2000px;
+        width: 100%;
     }
     header {
         height: 150px;
